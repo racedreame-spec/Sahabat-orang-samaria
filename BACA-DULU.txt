@@ -1,0 +1,33 @@
+SAHABAT ORANG SAMARIA - PAKET APLIKASI OFFLINE (PWA)
+
+Isi paket:
+  index.html               aplikasi
+  manifest.webmanifest     data aplikasi (nama, ikon, warna)
+  sw.js                    penyimpan file agar jalan tanpa internet
+  icon-192.png, icon-512.png, icon-maskable-512.png
+
+Semua file harus berada di folder yang sama dan dibuka lewat alamat https.
+
+CARA 1 - NETLIFY (paling mudah, gratis)
+  1. Ekstrak file ZIP ini sampai jadi satu folder.
+  2. Buka https://app.netlify.com/drop lalu masuk atau daftar.
+  3. Tarik (drag) seluruh folder itu ke halaman tersebut.
+  4. Setelah selesai, kamu mendapat alamat seperti https://nama-acak.netlify.app
+
+CARA 2 - GITHUB PAGES (gratis)
+  1. Buat repositori baru di github.com, lalu unggah semua file ke dalamnya.
+  2. Buka Settings > Pages, pilih branch main dan folder root, lalu Save.
+  3. Tunggu beberapa menit sampai alamatnya muncul.
+
+MEMASANG DI HP
+  Android (Chrome): buka alamatnya, tunggu sampai muncul tawaran "Instal aplikasi"
+                    atau pilih menu titik tiga > Instal aplikasi / Tambahkan ke layar utama.
+  iPhone (Safari):  buka alamatnya, ketuk tombol Bagikan > Tambah ke Layar Utama.
+
+PENTING
+  - Buka aplikasinya SEKALI saat ada internet. Setelah itu semua isi tersimpan
+    dan bisa dipakai tanpa internet.
+  - Kalau kamu mengubah isi aplikasi, naikkan angka VERSI di sw.js
+    (misalnya sahabat-orang-samaria-v3) lalu unggah ulang, supaya HP mengambil yang terbaru.
+  - Membuka index.html langsung dari penyimpanan HP (alamat file://) tidak
+    mengaktifkan mode offline. Harus lewat alamat https.
